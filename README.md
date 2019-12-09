@@ -16,13 +16,15 @@ From an elevated command prompt or PowerShell window:
 `choco install atom -y`
 2. Refresh your environment variables to register `atom` and `apm` to your PATH:
 `refreshenv`
-3. Install fonts:
+3. Install required fonts:
 `choco install hackfont firacode inter -y`
 4. Install Atom [sync-settings](http://https://atom.io/packages/sync-settings "sync-settings") package:
 `apm install sync-settings`
 5. Open Atom: *File > Settings > Packages > Sync Settings > Settings*
-    - Personal Access Token: (*GitHub: Account settings > Developer settings > Personal access tokens > Generate new token with 'Gist' scope*)
-    - Gist ID: (*Copy ID from previously created secret Gist*)
+    - **Personal Access Token**: Generate a new token with the 'Gist' scope (*GitHub: Account settings > Developer settings > Personal access tokens > Generate new token*)
+    - **Gist ID**: Copy ID from secret Gist previously created
+6. Close and reopen Atom Editor
+7. You should be presented with a warning: "sync-settings: Your settings are out of date." Click **Restore**.
 
 ------------
 
