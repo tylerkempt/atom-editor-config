@@ -3,11 +3,15 @@
 ## 📝 About
 My personal configuration for GitHub Atom editor.
 
+------------
+
 ## 👷 Prerequisites
 
  - **Operating System**: Windows 10
  - **Package Management**: Chocolatey ([https://chocolatey.org/](https://chocolatey.org/))
- 
+
+------------
+
 ## 📦 Setup
 
 From an elevated command prompt or PowerShell window:
