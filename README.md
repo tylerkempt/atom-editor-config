@@ -23,7 +23,7 @@ From an elevated command prompt or PowerShell window:
 5. Open Atom: *File > Settings > Packages > Sync Settings > Settings*
     - **Personal Access Token**: Generate a new token with the 'Gist' scope (*GitHub: Account settings > Developer settings > Personal access tokens > Generate new token*)
     - **Gist ID**: Copy ID from secret Gist previously created
-6. Close and reopen Atom editor.
+6. Close and reopen Atom editor
 7. You should be presented with a warning: "sync-settings: Your settings are out of date." Click **Restore**
 8. Once Sync Settings finishes installing all packages/settings, close and reopen Atom editor
 
