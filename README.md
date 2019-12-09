@@ -36,12 +36,12 @@ From an elevated command prompt or PowerShell window:
 ## 🔧 Troubleshooting
 
 #### `apm` is not a recognized as an internal or external command, operable program or batch file.
-**Issue**: Atom is likely not part of your user or system path. To verify:
+**Issue**: Atom is likely not part of your user or system PATH. To verify:
 ```
 C:\> echo %PATH%
 ```
 
-**Solution**: Add Atom editor to your system path:
+**Solution**: Add Atom editor to your system PATH:
 ```
 C:\> echo %PATH% > %USERPROFILE%\Desktop\path-backup.txt
 C:\> setx /M path "%PATH%;%LOCALAPPDATA%\atom\bin"
