@@ -1,13 +1,38 @@
 # atom-editor-config
-My personal configuration for GitHub Atom editor, including packages, styles, etc.
 
-https://gist.github.com/tylerkempt/30e47b2bb3a2759e93169ba2f926fbfd
-
-Also see the following thread for inspiration:
-https://discuss.atom.io/t/share-your-stylesheet/21653/2
+## About
+My personal configuration for GitHub Atom editor.
 
 ## Prerequisites
 
-* **Font**: "Operator Pro" font from Hoefler & Co. (http://www.typography.com/fonts/operator/overview/)
-* **UI Theme**: One Dark ()
-* **Syntax Theme**: Material ()
+ - **Operating System**: Windows 10
+ - **Package Management**: Chocolatey ([https://chocolatey.org/](https://chocolatey.org/))
+ 
+## Setup
+
+From an elevated command prompt or PowerShell window:
+
+1. Install Atom Editor: 
+`choco install atom -y`
+2. Refresh your environment variables to register `atom` and `apm` to your PATH:
+`refreshenv`
+3. Install fonts:
+`choco install hackfont firacode inter -y`
+4. Install Atom [sync-settings](http://https://atom.io/packages/sync-settings "sync-settings") package:
+`apm install sync-settings`
+
+## Troubleshooting
+
+#### `apm` is not a recognized as an internal or external command, operable program or batch file.
+**Issue**: Atom is likely not part of your user or system path. To verify:
+```
+C:\> echo %PATH%
+```
+
+**Solution**: Add Atom editor to your system path:
+```
+C:\> echo %PATH% > %USERPROFILE%\Desktop\path-backup.txt
+C:\> setx /M path "%PATH%;%LOCALAPPDATA%\atom\atom.exe"
+```
+
+
