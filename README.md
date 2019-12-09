@@ -20,6 +20,11 @@ From an elevated command prompt or PowerShell window:
 `choco install hackfont firacode inter -y`
 4. Install Atom [sync-settings](http://https://atom.io/packages/sync-settings "sync-settings") package:
 `apm install sync-settings`
+5. Open Atom: *File > Settings > Packages > Sync Settings > Settings*
+    - Personal Access Token: (*GitHub: Account settings > Developer settings > Personal access tokens > Generate new token with 'Gist' scope*)
+    - Gist ID: (*Copy ID from previously created secret Gist*)
+
+------------
 
 ## Troubleshooting
 
@@ -30,10 +35,10 @@ C:\> echo %PATH%
 ```
 
 **Solution**: Add Atom editor to your system path:
-See: https://discuss.atom.io/t/installing-apm-on-windows-am-i-missing-something/13089/10
 ```
 C:\> echo %PATH% > %USERPROFILE%\Desktop\path-backup.txt
 C:\> setx /M path "%PATH%;%LOCALAPPDATA%\atom\bin"
 ```
+See: https://discuss.atom.io/t/installing-apm-on-windows-am-i-missing-something/13089/10
 
 
