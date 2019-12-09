@@ -1,9 +1,9 @@
 # atom-editor-config
 
-## About
+## 📝 About
 My personal configuration for GitHub Atom editor.
 
-## Prerequisites
+## 👷 Prerequisites
 
  - **Operating System**: Windows 10
  - **Package Management**: Chocolatey ([https://chocolatey.org/](https://chocolatey.org/))
@@ -29,7 +29,7 @@ From an elevated command prompt or PowerShell window:
 
 ------------
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 #### `apm` is not a recognized as an internal or external command, operable program or batch file.
 **Issue**: Atom is likely not part of your user or system path. To verify:
