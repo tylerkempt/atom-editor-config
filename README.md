@@ -30,9 +30,10 @@ C:\> echo %PATH%
 ```
 
 **Solution**: Add Atom editor to your system path:
+See: https://discuss.atom.io/t/installing-apm-on-windows-am-i-missing-something/13089/10
 ```
 C:\> echo %PATH% > %USERPROFILE%\Desktop\path-backup.txt
-C:\> setx /M path "%PATH%;%LOCALAPPDATA%\atom\atom.exe"
+C:\> setx /M path "%PATH%;%LOCALAPPDATA%\atom\bin"
 ```
 
 
