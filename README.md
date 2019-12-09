@@ -8,11 +8,11 @@ My personal configuration for GitHub Atom editor.
  - **Operating System**: Windows 10
  - **Package Management**: Chocolatey ([https://chocolatey.org/](https://chocolatey.org/))
  
-## Setup
+## 📦 Setup
 
 From an elevated command prompt or PowerShell window:
 
-1. Install Atom Editor: 
+1. Install GitHub Atom editor: 
 `choco install atom -y`
 2. Refresh your environment variables to register `atom` and `apm` to your PATH:
 `refreshenv`
@@ -23,8 +23,9 @@ From an elevated command prompt or PowerShell window:
 5. Open Atom: *File > Settings > Packages > Sync Settings > Settings*
     - **Personal Access Token**: Generate a new token with the 'Gist' scope (*GitHub: Account settings > Developer settings > Personal access tokens > Generate new token*)
     - **Gist ID**: Copy ID from secret Gist previously created
-6. Close and reopen Atom Editor
-7. You should be presented with a warning: "sync-settings: Your settings are out of date." Click **Restore**.
+6. Close and reopen Atom editor.
+7. You should be presented with a warning: "sync-settings: Your settings are out of date." Click **Restore**
+8. Once Sync Settings finishes installing all packages/settings, close and reopen Atom editor
 
 ------------
 
